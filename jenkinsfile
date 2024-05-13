@@ -1,12 +1,13 @@
 pipeline {
 
     agent any
-/*
+
 	tools {
-        maven "maven3"
-        yes
+        maven "MAVEN3"
+        jdk "OracleJDK11"
+        
     }
-*/
+
     environment {
         registry = "sequence01/vprofiledb"
         registryCredential = "dockerhub"
