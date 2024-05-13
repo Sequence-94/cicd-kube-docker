@@ -81,7 +81,7 @@ pipeline {
         }
         stage('Uplaod Image'){
             steps{
-                scripts{
+                script{
                     docker.withRegistry('',registryCredential)
                     {
                         dockerImage.push("V$BUILD_NUMBER")
